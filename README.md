@@ -20,6 +20,18 @@ See [Releases](https://github.com/amake/ServeThis/releases).
 Note that you can run multiple copies; each subsequent copy will try to run on
 the next available port, so 8001, 8002, etc.
 
+# Known Issues
+
+If you get the following message when accessing the URL in your browser, try moving the app to another location and then moving it back. (This appears to be related to macOS sandboxing of apps downloaded from the internet.)
+
+> Error response
+>
+> Error code 404.
+>
+> Message: No permission to list directory.
+>
+> Error code explanation: 404 = Nothing matches the given URI.
+
 # Building
 
 Requirements:
