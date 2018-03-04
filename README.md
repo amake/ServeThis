@@ -7,6 +7,10 @@ This is intended for folks who need to run temporary, local HTTP servers but
 aren't comfortable using the command line, for instance web designers who want
 to take advantage of [Live.js](http://livejs.com/) when editing local files.
 
+# Download
+
+See [Releases](https://github.com/amake/ServeThis/releases).
+
 # Usage
 
 1. Put the app in the directory you want to serve
