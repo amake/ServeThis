@@ -11,5 +11,6 @@ for port in {8000..8100}; do
         echo "Serving at ${url}..."
         open $url
         wait $pid
+        exit $?
     fi
 done
