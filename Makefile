@@ -8,7 +8,7 @@ all: app sign zip
 
 app: work/$(app_name).app
 
-zip: dist/$(app_name).zip
+zip: dist/$(app_name)-$(app_version).zip
 
 clean:
 	rm -rf work dist
@@ -30,6 +30,6 @@ work/%.app: %.sh | work
 sign: work/$(app_name).app
 	if [ ! -z "$(codesign_id)" ]; then codesign -f -s "$(codesign_id)" $(^); fi
 
-dist/%.zip: work/%.app | dist
+dist/%-$(app_version).zip: work/%.app | dist
 	cd $(^D); zip -r $(@F) .
 	mv $(^D)/$(@F) $(@)
