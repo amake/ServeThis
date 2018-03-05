@@ -1,5 +1,5 @@
 app_name = ServeThis
-app_version = 1.0
+app_version = 1.1
 bundle_id = org.amake.$(app_name)
 
 .PHONY: all app sign zip clean
