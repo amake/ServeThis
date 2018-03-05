@@ -31,4 +31,5 @@ sign: work/$(app_name).app
 	if [ ! -z "$(codesign_id)" ]; then codesign -f -s "$(codesign_id)" $(^); fi
 
 dist/%.zip: work/%.app | dist
-	cd $(^D); zip -r $(@F) .; cd -; mv $(^D)/$(@F) $(@)
+	cd $(^D); zip -r $(@F) .
+	mv $(^D)/$(@F) $(@)
