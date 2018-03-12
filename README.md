@@ -5,7 +5,10 @@ HTTP.
 
 This is intended for folks who need to run temporary, local HTTP servers but
 aren't comfortable using the command line, for instance web designers who want
-to take advantage of [Live.js](http://livejs.com/) when editing local files.
+to take advantage of [Live.js](http://livejs.com/) when editing local files. It
+is merely a wrapper around the
+[SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)
+module in macOS's built-in Python.
 
 # Download
 
